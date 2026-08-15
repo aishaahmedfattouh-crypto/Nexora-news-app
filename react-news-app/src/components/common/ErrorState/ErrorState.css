@@ -1,0 +1,45 @@
+.error-state {
+    display: flex;
+    align-items: center;
+
+    gap: 16px;
+
+    padding: 24px;
+
+    border: 1px solid #fecaca;
+    border-radius: var(--radius-md);
+
+    background: #fffafa;
+}
+
+.error-state__icon {
+    display: grid;
+    place-items: center;
+
+    width: 40px;
+    height: 40px;
+
+    flex-shrink: 0;
+
+    border-radius: 50%;
+
+    background: #fee2e2;
+
+    color: #b91c1c;
+
+    font-weight: 700;
+}
+
+.error-state h3 {
+    color: var(--color-dark);
+
+    font-size: 16px;
+}
+
+.error-state p {
+    margin-top: 4px;
+
+    color: var(--color-muted);
+
+    font-size: 14px;
+}

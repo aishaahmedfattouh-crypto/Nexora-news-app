@@ -1,0 +1,171 @@
+.news-card {
+    display: flex;
+
+    flex-direction: column;
+
+    height: 100%;
+
+    overflow: hidden;
+
+    border: 1px solid var(--color-border, #e2e8f0);
+
+    border-radius: 18px;
+
+    background: #ffffff;
+
+    box-shadow: 0 2px 8px rgba(15, 23, 42, 0.06);
+
+    cursor: pointer;
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease,
+        border-color 0.25s ease;
+}
+
+
+.news-card:hover {
+    transform: translateY(-6px);
+
+    border-color: #c7d2fe;
+
+    box-shadow: 0 12px 30px rgba(15, 23, 42, 0.12);
+}
+
+
+/* Image */
+
+.news-card__image-wrapper {
+    position: relative;
+
+    overflow: hidden;
+
+    width: 100%;
+
+    aspect-ratio: 16 / 10;
+
+    background: #e2e8f0;
+}
+
+.news-card__save {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+
+    width: 42px;
+    height: 42px;
+
+    border: none;
+    border-radius: 50%;
+
+    background: rgba(255, 255, 255, 0.95);
+
+    font-size: 24px;
+    color: #555;
+
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: all 0.2s ease;
+}
+
+.news-card__save:hover {
+    transform: scale(1.1);
+}
+
+.news-card__save.saved {
+    color: #6366f1;
+}
+
+.news-card__image {
+    display: block;
+
+    width: 100%;
+
+    height: 340px;
+
+    object-fit: cover;
+
+    transition: transform 0.5s ease;
+}
+
+
+.news-card:hover .news-card__image {
+    transform: scale(1.05);
+}
+
+
+/* Body */
+
+.news-card__body {
+    display: flex;
+
+    flex-direction: column;
+
+    flex: 1;
+
+    padding: 22px;
+}
+
+
+/* Category */
+
+.news-card__category {
+    margin-bottom: 12px;
+
+    color: #6366f1;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    text-transform: uppercase;
+
+    letter-spacing: 0.05em;
+}
+
+
+/* Title */
+
+.news-card__title {
+    margin: 0 0 12px;
+
+    color: #0f172a;
+
+    font-size: 24px;
+
+    line-height: 1.35;
+
+    font-weight: 700;
+}
+
+
+/* Description */
+
+.news-card__description {
+    margin: 0;
+
+    color: #64748b;
+
+    font-size: 16px;
+
+    line-height: 1.7;
+}
+
+
+/* Footer */
+
+.news-card__footer {
+    margin-top: auto;
+
+    padding-top: 18px;
+
+    border-top: 1px solid #e2e8f0;
+
+    color: #64748b;
+
+    font-size: 14px;
+}
